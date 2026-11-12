@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: lab2-order-processing
+
+server:
+  port: 8082
+
+# Connects to a local Camunda 8 Run instance (no authentication on the APIs by default).
+camunda:
+  client:
+    mode: self-managed
+    grpc-address: http://localhost:26500
+    rest-address: http://localhost:8080
+    prefer-rest-over-grpc: false

@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: lab1-loan-approval
+
+server:
+  port: 8081
+
+camunda:
+  client:
+    mode: self-managed
+    grpc-address: http://localhost:26500
+    rest-address: http://localhost:8080
+    prefer-rest-over-grpc: false
